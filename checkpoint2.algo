@@ -1,0 +1,30 @@
+ALGORITHM algorithm_array
+VAR
+    j,k : INTEGER;
+    T1, T2 : ARRAY_OF INTEGER[10];
+    s: INTEGER;
+BEGIN
+s :=0;
+T1 := {4,5,6,8,2}
+T2 := {4,6,1,2}
+FOR j FROM 0 TO T1.length - 1 STEP 1  DO
+    FOR k FROM 0 TO T2.length - 1 STEP 1  DO
+    IF (T1[j] = T2[k]) THEN
+        BREAK;
+    END_IF
+    IF (k= T2.length - 1) THEN
+        s:= s+e1[j];
+    END_IF
+END_FOR
+FOR k FROM 0 TO T2.length - 1 STEP 1  DO
+    FOR j FROM 0 TO T2.length - 1 STEP 1  DO
+    IF (T2[j] = T1[k]) THEN
+        BREAK;
+    END_IF
+    IF (J= T2.length-1)THEN
+    sum:= sum+T2[i];
+    END_FOR
+    Write("sum");
+    END
+
+
